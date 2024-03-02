@@ -26,11 +26,13 @@ public class MemberServiceImp implements MemberService {
 
     @Override
     public String updateMemberByEmail(String email) {
+        Member m = memberRepo.findByEmail(email);
         return null;
     }
 
     @Override
     public String deleteMemberByEmail(String email) {
-        return null;
+        memberRepo.deleteByEmail(email);
+        return "member is deleted";
     }
 }
