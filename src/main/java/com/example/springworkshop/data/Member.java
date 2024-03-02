@@ -22,7 +22,7 @@ public class Member implements Serializable {
     private Long id;
     private String name;
     private String email;
-    private int CIN;
+    private Integer cin;
 
 
 }

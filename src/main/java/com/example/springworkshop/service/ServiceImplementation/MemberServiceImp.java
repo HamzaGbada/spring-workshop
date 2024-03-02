@@ -27,7 +27,7 @@ public class MemberServiceImp implements MemberService {
     @Override
     public String updateMemberByEmail(String email) {
         Member m = memberRepo.findByEmail(email);
-        m.setCIN(0000);
+        m.setCin(0000);
         memberRepo.save(m);
         return "member is updated";
     }
